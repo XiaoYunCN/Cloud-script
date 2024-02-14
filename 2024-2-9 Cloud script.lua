@@ -65,7 +65,7 @@ CoreGui:SetCore("SendNotification", {
     Text = "成功支持鲨口生求2",
     Duration = 5, 
 })
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/%E9%B2%A8%E5%8F%A3%E7%94%9F%E6%B1%822.lua", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/%E9%B2%A8%E5%8F%A3%E7%94%9F%E6%B1%822.lua", true))()
 
 elseif game.PlaceId == 6516141723 then
 

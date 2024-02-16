@@ -1,36 +1,3 @@
-notificationGui = Instance.new("ScreenGui")
-notificationGui.Enabled = true  
-notificationGui.IgnoreGuiInset = true 
-
-local notificationFrame = Instance.new("Frame")
-notificationFrame.Size = UDim2.new(0, 200, 0, 50)--大小
-notificationFrame.Position = UDim2.new(0.5, -100, 1, -50) --位置
-notificationFrame.BackgroundColor3 = Color3.new(1, 1, 1)--背景颜色3
-notificationFrame.Parent = notificationGui
-
-local notificationText = Instance.new("TextLabel")
-notificationText.Size = UDim2.new(1, 0, 1, 0)--大小
-notificationText.Position = UDim2.new(0, 0, 0, 0)--位置
-notificationText.BackgroundColor3 = Color3.new(1, 1, 1)--背景颜色3
-notificationText.TextColor3 = Color3.new(0, 0, 0)--文本颜色3
-notificationText.Text = "执行成功，云V1.53"
-notificationText.Font = Enum.Font.SourceSansBold
-notificationText.FontSize = Enum.FontSize.Size24
-notificationText.TextScaled = true
-notificationText.Parent = notificationFrame
-
-local function animateNotification()
-    local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0)
-    local tween = game:GetService("TweenService"):Create(notificationFrame, tweenInfo, {Position = UDim2.new(0.5, -100, 0.8, -50)})
-    tween:Play()
-    wait(3)
-    tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0)
-    tween = game:GetService("TweenService"):Create(notificationFrame, tweenInfo, {Position = UDim2.new(0.5, -100, 1, -50)})
-    tween:Play()
-    wait(1)--停止
-    notificationGui:Destroy()
-end
-
 notificationGui.Parent = game.Players.LocalPlayer.PlayerGui
 animateNotification()
 
@@ -38,7 +5,7 @@ local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
     Title = "云脚本",
-    Text = "成功注入器 等待加载",
+    Text = "正在云脚本启动",
     Duration = 5, 
 })
 print("Anti Afk On")
@@ -54,7 +21,7 @@ if game.PlaceId == 3101667897 then --极速传奇
 
    CoreGui:SetCore("SendNotification", {
     Title = "云",
-    Text = "成功支持极速传奇",
+    Text = "当前极速传奇",
     Duration = 5, 
 }) loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/7.lua"))()
 
@@ -62,7 +29,7 @@ elseif game.PlaceId == 8908228901 then
         --鲨2
 CoreGui:SetCore("SendNotification", {
     Title = "云",
-    Text = "成功支持鲨口生求2",
+    Text = "当前鲨口生求2",
     Duration = 5, 
 })
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/%E9%B2%A8%E5%8F%A3%E7%94%9F%E6%B1%822.lua", true))()
@@ -71,7 +38,7 @@ elseif game.PlaceId == 6516141723 then
 
 CoreGui:SetCore("SendNotification", {
     Title = "云",
-    Text = "成功支持Doors",
+    Text = "Doors有问题，找小云作者",
     Duration = 5, 
 })
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/Doors%20Script.lia", true))()
@@ -82,14 +49,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Xiao-Yun-UW
 elseif game.PlaceId == 10023052234 then
    CoreGui:SetCore("SendNotification", {
     Title = "云",
-    Text = "成功支持Evade",
+    Text = "当前Evade",
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/Evade.lua", true))() 
 })
 elseif game.PlaceId == 3956818381 then --忍者传奇
    CoreGui:SetCore("SendNotification", {
     Title = "云",
-    Text = "成功支持忍者传奇",
+    Text = "当前忍者传奇",
     Duration = 5, 
 }) loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/hope%20earnestly/Ninja%20Legend.lua", true))()
 
@@ -107,7 +74,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/Sc
 elseif game.PlaceId == 3623096087 then --力量传奇
 CoreGui:SetCore("SendNotification", {
     Title = "云",
-    Text = "成功支持力量传奇",
+    Text = "当前力量传奇",
     Duration = 5, 
 }) loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/%E5%8A%9B%E9%87%8FV2.1.lua"))()
 
@@ -115,7 +82,7 @@ CoreGui:SetCore("SendNotification", {
 elseif game.PlaceId == 1345139196  then 
 CoreGui:SetCore("SendNotification", {
     Title = "云",
-    Text = "成功支持寻宝模拟器",
+    Text = "当前寻宝模拟器",
     Duration = 5, 
 })
 
@@ -128,10 +95,16 @@ else --其他通用
 
 CoreGui:SetCore("SendNotification", {
     Title = "云",
-    Text = "不支持服务器哦，去玩通用脚本吧",
+    Text = "当前通用脚本",
     Duration = 5, 
 })
 
 loadstring(game:HttpGet("https://github.com/XiaoYunCN/Cloud-script/raw/main/6666666666666666666666666.lua", true))()
 
 end
+
+CoreGui:SetCore("SendNotification", {
+    Title = "云脚本",
+    Text = "已经是反挂机",
+    Duration = 5, 
+})

@@ -1,5 +1,5 @@
-notificationGui.Parent = game.Players.LocalPlayer.PlayerGui
-animateNotification()
+
+
 
 local CoreGui = game:GetService("StarterGui")
 
@@ -107,4 +107,20 @@ CoreGui:SetCore("SendNotification", {
     Title = "云脚本",
     Text = "已经是反挂机",
     Duration = 5, 
+})
+
+
+local bindable = Instance.new("BindableFunction")
+bindable.OnInvoke = function(button)
+    print(button)
+end
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "小云",
+    Text = "您喜欢云脚本吗？",
+    Icon = "rbxassetid://",
+    Duration = 5,
+    Callback = bindable,
+    Button1 = "算了",
+    Button2 = "不喜欢"
 })

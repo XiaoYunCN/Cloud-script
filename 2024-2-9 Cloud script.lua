@@ -65,7 +65,11 @@ elseif game.PlaceId == 1318971886 then --Break in (Stay)
 
 elseif game.PlaceId == 189707 then 
 
- loadstring(game:HttpGet("https://gist.githubusercontent.com/XiaoYunCN/ea20ccfa5b895def3d7e1442fc299c4f/raw/9f964d40a58cc66c296596eae10f38096fb6aa58/gistfile1.txt", true))()
+CoreGui:SetCore("SendNotification", {
+    Title = "云",
+    Text = "当前自然灾害生存",
+    Duration = 5, 
+}) loadstring(game:HttpGet("https://gist.githubusercontent.com/XiaoYunCN/ea20ccfa5b895def3d7e1442fc299c4f/raw/9f964d40a58cc66c296596eae10f38096fb6aa58/gistfile1.txt", true))()
 
 elseif game.PlaceId == 537413528 then
 
@@ -107,20 +111,4 @@ CoreGui:SetCore("SendNotification", {
     Title = "云脚本",
     Text = "已经是反挂机",
     Duration = 5, 
-})
-
-
-local bindable = Instance.new("BindableFunction")
-bindable.OnInvoke = function(button)
-    print(button)
-end
-
-game:GetService("StarterGui"):SetCore("SendNotification",{
-    Title = "小云",
-    Text = "您喜欢云脚本吗？",
-    Icon = "rbxassetid://",
-    Duration = 5,
-    Callback = bindable,
-    Button1 = "算了",
-    Button2 = "不喜欢"
 })

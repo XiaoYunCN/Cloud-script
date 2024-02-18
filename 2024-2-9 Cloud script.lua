@@ -69,7 +69,8 @@ CoreGui:SetCore("SendNotification", {
     Title = "云",
     Text = "当前自然灾害生存",
     Duration = 5, 
-}) loadstring(game:HttpGet("https://gist.githubusercontent.com/XiaoYunCN/ea20ccfa5b895def3d7e1442fc299c4f/raw/9f964d40a58cc66c296596eae10f38096fb6aa58/gistfile1.txt", true))()
+})
+ loadstring(game:HttpGet("https://gist.githubusercontent.com/XiaoYunCN/ea20ccfa5b895def3d7e1442fc299c4f/raw/9f964d40a58cc66c296596eae10f38096fb6aa58/gistfile1.txt", true))()
 
 elseif game.PlaceId == 537413528 then
 

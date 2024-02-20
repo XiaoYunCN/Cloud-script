@@ -133,7 +133,7 @@ CoreGui:SetCore("SendNotification", {
     Duration = 5, 
 })
 
-loadstring(game:HttpGet("https://github.com/XiaoYunCN/Cloud-script/raw/main/6666666666666666666666666.lua", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/6666666666666666666666666.lua", true))()
 
 end
 

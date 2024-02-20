@@ -85,10 +85,10 @@ CoreGui:SetCore("SendNotification", {
 
 CoreGui:SetCore("SendNotification", {
     Title = "警告⚠️",
-    Text = "正在修复",
+    Text = "已经修复呗",
     Duration = 5, 
 })
- loadstring(game:HttpGet("https://gist.githubusercontent.com/XiaoYunCN/ea20ccfa5b895def3d7e1442fc299c4f/raw/9f964d40a58cc66c296596eae10f38096fb6aa58/gistfile1.txt", true))()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/L.lua", true))()
 
 elseif game.PlaceId == 537413528 then
 CoreGui:SetCore("SendNotification", {

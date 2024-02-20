@@ -117,6 +117,14 @@ CoreGui:SetCore("SendNotification", {
     Duration = 5, 
 })
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/LLL.lua", true))()
+elseif game.PlaceId == 13775256536  then 
+CoreGui:SetCore("SendNotification", {
+    Title = "云",
+    Text = "当前Toilet Tower Defense",
+    Duration = 5, 
+})
+
+
 else --其他通用
 
 CoreGui:SetCore("SendNotification", {

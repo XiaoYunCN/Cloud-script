@@ -12,7 +12,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
     Button1 = "是",
     Button2 = "否"
 })
-
+wait(5)
 local bindable = Instance.new("BindableFunction")
 bindable.OnInvoke = function(button)
     setclipboard("526684389")
@@ -26,4 +26,21 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
     Callback = bindable,
     Button1 = "复制",
     Button2 = "不用了"
+})
+
+wait(2.5)
+
+local bindable = Instance.new("BindableFunction")
+bindable.OnInvoke = function(button)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/Lol.lua", true))()
+end
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "你要通用云脚本吗",
+    Text = "要就你的Orino已被移除",
+    Icon = "rbxassetid://3926305904",
+    Duration = 60,
+    Callback = bindable,
+    Button1 = "要",
+    Button2 = "不要"
 })

@@ -123,7 +123,7 @@ CoreGui:SetCore("SendNotification", {
     Text = "当前Toilet Tower Defense",
     Duration = 5, 
 })
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/Toilet%20Tower%20Defense.lua", true))()
 
 else --其他通用
 

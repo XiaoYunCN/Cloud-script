@@ -16,6 +16,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 local bindable = Instance.new("BindableFunction")
 bindable.OnInvoke = function(button)
     setclipboard("526684389")
+end
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
     Title = "你加入云脚本群吗",

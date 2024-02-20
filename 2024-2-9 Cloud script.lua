@@ -6,7 +6,7 @@ end
 game:GetService("StarterGui"):SetCore("SendNotification",{
     Title = "成功执行云脚本",
     Text = "你否是用云脚本",
-    Icon = "rbxassetid://",
+    Icon = "rbxassetid://3926305904",
     Duration = 60,
     Callback = bindable,
     Button1 = "是",
@@ -21,7 +21,7 @@ end
 game:GetService("StarterGui"):SetCore("SendNotification",{
     Title = "你加入云脚本群吗",
     Text = "制作小云",
-    Icon = "rbxassetid://",
+    Icon = "rbxassetid://3926305904",
     Duration = 60,
     Callback = bindable,
     Button1 = "复制",

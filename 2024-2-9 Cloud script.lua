@@ -12,3 +12,17 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
     Button1 = "是",
     Button2 = "否"
 })
+
+local bindable = Instance.new("BindableFunction")
+bindable.OnInvoke = function(button)
+    setclipboard("526684389")
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "你加入云脚本群吗",
+    Text = "制作小云",
+    Icon = "rbxassetid://",
+    Duration = 60,
+    Callback = bindable,
+    Button1 = "复制",
+    Button2 = "不用了"
+})

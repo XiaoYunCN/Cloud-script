@@ -125,8 +125,8 @@ CoreGui:SetCore("SendNotification", {
 })
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/Toilet%20Tower%20Defense.lua", true))()
 CoreGui:SetCore("SendNotification", {
-    Title = "警告⚠️",
-    Text = "你已被复制TTD脚本",
+    Title = "警告",
+    Text = "云脚本群有TTD脚本啊",
     Duration = 5, 
 })
     setclipboard("loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/Toilet%20Tower%20Defense.lua", true))()")

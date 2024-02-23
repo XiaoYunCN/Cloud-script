@@ -1,4 +1,18 @@
+local CoreGui = game:GetService("StarterGui")
 
+CoreGui:SetCore("SendNotification", {
+    Title = "云脚本",
+    Text = "正在云脚本启动",
+    Duration = 5, 
+})
+print("Anti Afk On")
+                local vu = game:GetService("VirtualUser")
+                game:GetService("Players").LocalPlayer.Idled:connect(function()
+                   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+                   wait(1)
+                   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+                end)
+wait(1)
 --服务器
 if game.PlaceId == 3101667897 then --极速传奇
 

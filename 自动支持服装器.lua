@@ -1,18 +1,4 @@
-local CoreGui = game:GetService("StarterGui")
 
-CoreGui:SetCore("SendNotification", {
-    Title = "云脚本",
-    Text = "正在云脚本启动",
-    Duration = 5, 
-})
-print("Anti Afk On")
-                local vu = game:GetService("VirtualUser")
-                game:GetService("Players").LocalPlayer.Idled:connect(function()
-                   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-                   wait(1)
-                   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-                end)
-wait(1)
 --服务器
 if game.PlaceId == 3101667897 then --极速传奇
 
@@ -1029,52 +1015,3 @@ CoreGui:SetCore("SendNotification", {
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/6666666666666666666666666.lua", true))()
 
 end
-
-CoreGui:SetCore("SendNotification", {
-    Title = "云脚本",
-    Text = "已经是反挂机（20分钟防踢人）",
-    Duration = 5, 
-})
-
-
-coroutine.wrap(CGSLH_fake_script)()
-local function VIEO_fake_script() 
-        local script = Instance.new('LocalScript', CNM)
-
-        local CNM=script.Parent
-        local Mini=CNM.Mini
-        local Close=CNM.Close
-        local main=CNM.Mian
-        main.Visible=false
-
-        Close.MouseButton1Click:Connect(function()
-                CNM.Parent:Destroy()
-        end)
-        main.Size=UDim2.new(1, 0,0.02, 0)
-        CNM.Active=true
-        CNM.Draggable=true
-        Mini.MouseButton1Click:Connect(function()
-                if main.Visible==false then
-                        main.Visible=true
-                        main:TweenSize(UDim2.new(1, 0,13.647, 0),"Out","Sine",0.15)
-                else
-                        main:TweenSize(UDim2.new(1, 0,0.02, 0),"Out","Sine",0.15)
-                        main.Visible=false
-                end
-        end)
-end
-coroutine.wrap(VIEO_fake_script)()
-game.Players.ChildAdded:Connect(function(player)
-    if not pcall (function()
-    SendNotification("玩家加入",""..player.Name.." 加入了游戏",5 )
-    end) then
-      print ("Error")
-    end
-    end)
-    game.Players.ChildRemoved:Connect(function(player)
-        if not pcall (function()
-        SendNotification("玩家离开",""..player.Name.." 离开了游戏",4.4 )
-        end) then
-          print ("Error")
-        end
-        end)

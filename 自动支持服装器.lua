@@ -129,7 +129,7 @@ CoreGui:SetCore("SendNotification", {
     Text = "云脚本群有TTD脚本啊",
     Duration = 5, 
 })
-    setclipboard("loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/Toilet%20Tower%20Defense.lua", true))()")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/Toilet%20Tower%20Defense.lua", true))()
 
 elseif game.PlaceId == 7239319209  then 
 CoreGui:SetCore("SendNotification", {

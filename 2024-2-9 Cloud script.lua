@@ -137,4 +137,4 @@ notify("QQ168777105作者小云 QQ被封了26号晚上就解封", Color3.fromRGB
                          wait()
                          wait(1)
 notify("云脚本群号526684389", Color3.fromRGB(0, 255, 0))
-notify("云大群号684626531", Color3.fromRGB(0, 255, 0))
+notify("云脚本最新无BUG", Color3.fromRGB(0, 255, 0))

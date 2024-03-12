@@ -88,7 +88,7 @@ function notify(name, textColor)
         title.BackgroundTransparency = 1.000
         title.Size = UDim2.new(0.899999976, 0, 0, 20)
         title.Font = Enum.Font.Ubuntu
-        title.Text = "  ⭕ 退圈"
+        title.Text = "  ⭕ 小云已退圈"
         title.TextColor3 = Color3.fromRGB(235, 235, 235)
         title.TextSize = 14.000
         title.TextWrapped = true
@@ -98,4 +98,4 @@ function notify(name, textColor)
                 notification:Destroy()
         end)
    end
-notify("小云已退圈，以后不做云脚本", Color3.fromRGB(255, 255, 255))
+notify("云脚本要回归了吗，云脚本不可能更新", Color3.fromRGB(255, 255, 255))

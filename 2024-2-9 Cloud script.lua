@@ -88,7 +88,7 @@ function notify(name, textColor)
         title.BackgroundTransparency = 1.000
         title.Size = UDim2.new(0.899999976, 0, 0, 20)
         title.Font = Enum.Font.Ubuntu
-        title.Text = "  ⭕ 小云已退圈"
+        title.Text = "  ⭕ 小云制作"
         title.TextColor3 = Color3.fromRGB(235, 235, 235)
         title.TextSize = 14.000
         title.TextWrapped = true

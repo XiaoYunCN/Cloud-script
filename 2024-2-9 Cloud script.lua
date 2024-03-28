@@ -98,4 +98,4 @@ function notify(name, textColor)
                 notification:Destroy()
         end)
    end
-notify("云脚本要回归了吗，云脚本不可能更新", Color3.fromRGB(255, 255, 255))
+notify("云脚本重又回归了", Color3.fromRGB(255, 255, 255))

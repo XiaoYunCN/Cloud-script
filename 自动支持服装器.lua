@@ -134,6 +134,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-scrip
 else --其他通用
 
 CoreGui:SetCore("SendNotification", {
+    Title = "不支持服务器哦",
+    Text = "有找小云问题",
+    Duration = 5, 
+})
+
+CoreGui:SetCore("SendNotification", {
     Title = "云",
     Text = "当前通用脚本",
     Duration = 5, 

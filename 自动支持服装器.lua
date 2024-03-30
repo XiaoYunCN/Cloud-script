@@ -2,7 +2,7 @@ local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
     Title = "云脚本",
-    Text = "正在云脚本启动",
+    Text = "正在支持服务器",
     Duration = 5, 
 })
 print("Anti Afk On")
@@ -99,14 +99,6 @@ CoreGui:SetCore("SendNotification", {
 })
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/%E5%AF%BB%E5%AE%9D%E6%A8%A1%E6%8B%9F%E5%99%A8.lua", true))()
-elseif game.PlaceId == 4623386862  then 
-CoreGui:SetCore("SendNotification", {
-    Title = "云",
-    Text = "当前小猪",
-    Duration = 5, 
-})
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/%E6%B8%B8%E6%88%8F/%E5%B0%8F%E7%8C%AA.lua", true))()
 elseif game.PlaceId == 1701332290 then
         --服务号1701332290
 CoreGui:SetCore("SendNotification", {

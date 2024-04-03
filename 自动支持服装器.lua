@@ -12,7 +12,7 @@ print("Anti Afk On")
                    wait(1)
                    vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
                 end)
-wait(1)
+wait(3.5)
 --服务器
 if game.PlaceId == 3101667897 then --极速传奇
 

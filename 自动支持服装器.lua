@@ -44,6 +44,13 @@ elseif game.PlaceId == 10023052234 then
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/Evade.lua", true))() 
 })
+elseif game.PlaceId == 8888615802 then --忍者传奇
+   CoreGui:SetCore("SendNotification", {
+    Title = "云",
+    Text = "当前彩虹朋友",
+    Duration = 5, 
+})
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/%E6%B8%B8%E6%88%8F/%E5%BD%A9%E8%99%B9%E6%9C%8B%E5%8F%8B.lua", true))()
 elseif game.PlaceId == 3956818381 then --忍者传奇
    CoreGui:SetCore("SendNotification", {
     Title = "云",

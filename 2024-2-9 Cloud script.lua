@@ -1,3 +1,7 @@
+--[[
+😓😓😓
+源代码去拿吧😥😥
+]]
 local bindable = Instance.new("BindableFunction")
 bindable.OnInvoke = function(button)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/%E8%87%AA%E5%8A%A8%E6%94%AF%E6%8C%81%E6%9C%8D%E8%A3%85%E5%99%A8.lua", true))()

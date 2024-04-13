@@ -1,18 +1,23 @@
-local CoreGui = game:GetService("StarterGui")
+repeat
 
-CoreGui:SetCore("SendNotification", {
-    Title = "云脚本",
-    Text = "正在支持服务器",
-    Duration = 5, 
-})
-print("Anti Afk On")
-                local vu = game:GetService("VirtualUser")
-                game:GetService("Players").LocalPlayer.Idled:connect(function()
-                   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-                   wait(1)
-                   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-                end)
-wait(3.5)
+    task.wait()
+
+until game.Players.LocalPlayer.Character~=nil;
+
+local a=tostring(game.Players.LocalPlayer.Character);
+      --玩家名字
+if a=="Hudson_From4"then
+
+_G.whitelisted=true
+
+elseif a=="Hudson_From8"then
+
+_G.whitelisted=true
+end
+
+if _G.whitelisted==true then
+    --这里是脚本
+
 --服务器
 if game.PlaceId == 3101667897 then --极速传奇
 
@@ -145,5 +150,13 @@ CoreGui:SetCore("SendNotification", {
 })
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/6666666666666666666666666.lua", true))()
+
+end
+
+    else
+
+
+
+game.Players.LocalPlayer:Kick("云脚本已关闭，")
 
 end

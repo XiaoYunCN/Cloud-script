@@ -157,6 +157,6 @@ end
 
 
 
-game.Players.LocalPlayer:Kick("云脚本已关闭，")
+game.Players.LocalPlayer:Kick("云脚本已关闭，请联系QQ168777105")
 
 end

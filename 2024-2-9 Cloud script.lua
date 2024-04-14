@@ -102,4 +102,4 @@ function notify(name, textColor)
                 notification:Destroy()
         end)
    end
-notify("云脚本已关闭，请联系QQ168777105", Color3.fromRGB(255, 255, 255))
+notify("云脚本已停更，请联系QQ168777105", Color3.fromRGB(255, 255, 255))

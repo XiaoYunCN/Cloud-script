@@ -1,22 +1,3 @@
-repeat
-
-    task.wait()
-
-until game.Players.LocalPlayer.Character~=nil;
-
-local a=tostring(game.Players.LocalPlayer.Character);
-      --玩家名字
-if a=="Hudson_From4"then
-
-_G.whitelisted=true
-
-elseif a=="Hudson_From8"then
-
-_G.whitelisted=true
-end
-
-if _G.whitelisted==true then
-    --这里是脚本
 
 --服务器
 if game.PlaceId == 3101667897 then --极速传奇
@@ -150,13 +131,5 @@ CoreGui:SetCore("SendNotification", {
 })
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/6666666666666666666666666.lua", true))()
-
-end
-
-    else
-
-
-
-game.Players.LocalPlayer:Kick("云脚本已关闭，请联系QQ168777105")
 
 end

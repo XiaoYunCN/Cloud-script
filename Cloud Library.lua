@@ -5,6 +5,7 @@ function CloudLibrary.ShowMessage(player, message)
     local notification = Instance.new("Hint")
     notification.Text = message
     notification.Parent = player:FindFirstChild("PlayerGui") or player:WaitForChild("PlayerGui")
+    wait(3)
     notification:Destroy()
 end
 

@@ -1,12 +1,11 @@
 local CloudLibrary = {}
 
-function CloudLibrary.ShowMessage(player, message)
-    print("消息" .. player.Name .. ": " .. message)
-    local notification = Instance.new("Hint")
-    notification.Text = message
-    notification.Parent = player:FindFirstChild("PlayerGui") or player:WaitForChild("PlayerGui")
-    wait(3)
-    notification:Destroy()
+function CloudLibrary.SetUIColor(uiElement, color)
+    if uiElement and color then
+        uiElement.BackgroundColor3 = color
+    else
+        warn("Invalid parameters provided to SetUIColor function.")
+    end
 end
 
 return CloudLibrary

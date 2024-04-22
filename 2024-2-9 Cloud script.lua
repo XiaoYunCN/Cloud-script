@@ -4,19 +4,7 @@
 ]]
 local bindable = Instance.new("BindableFunction")
 bindable.OnInvoke = function(button)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/%E8%87%AA%E5%8A%A8%E6%94%AF%E6%8C%81%E6%9C%8D%E8%A3%85%E5%99%A8.lua", true))()
-end
-
-game:GetService("StarterGui"):SetCore("SendNotification",{
-    Title = "成功执行云脚本",
-    Text = "你否是用云脚本",
-    Icon = "rbxassetid://3926305904",
-    Duration = 60,
-    Callback = bindable,
-    Button1 = "是",
-    Button2 = "否"
-})
-wait(0.1)
+   wait(0.1)
 local Main = Instance.new("ScreenGui")
         local Popups = Instance.new("Frame")
         local UIListLayout = Instance.new("UIListLayout")
@@ -103,3 +91,15 @@ function notify(name, textColor)
         end)
    end
 notify("云脚本已停更，请联系QQ168777105", Color3.fromRGB(255, 255, 255))
+wait(2.5) loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/%E8%87%AA%E5%8A%A8%E6%94%AF%E6%8C%81%E6%9C%8D%E8%A3%85%E5%99%A8.lua", true))()
+end
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "成功执行云脚本",
+    Text = "你否是用云脚本",
+    Icon = "rbxassetid://3926305904",
+    Duration = 60,
+    Callback = bindable,
+    Button1 = "是",
+    Button2 = "否"
+})

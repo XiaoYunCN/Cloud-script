@@ -1,15 +1,3 @@
-CoreGui:SetCore("SendNotification", {
-    Title = "等等！",
-    Text = "加载中..",
-    Duration = 5, 
-})
-wait(0.1)
- wait(0.1)
-  wait(0.4)
-   wait(0.5)
-  wait(0.1)
- wait(0.4)
---服务器
 if game.PlaceId == 3101667897 then --极速传奇
 
    CoreGui:SetCore("SendNotification", {

@@ -1,3 +1,11 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "等等！",
+    Text = "正在加载",
+    Duration = 3, 
+})
+wait(1)
 if game.PlaceId == 3101667897 then --极速传奇
 
    CoreGui:SetCore("SendNotification", {

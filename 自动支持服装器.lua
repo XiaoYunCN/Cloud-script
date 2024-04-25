@@ -12,7 +12,13 @@ if game.PlaceId == 3101667897 then --极速传奇
     Title = "云",
     Text = "当前极速传奇",
     Duration = 5, 
-}) loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/7.lua"))()
+}) 
+CoreGui:SetCore("SendNotification", {
+    Title = "⚠️注意！",
+    Text = "左上角！",
+    Duration = 30, 
+})
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/%E6%B8%B8%E6%88%8F/%E6%9E%81%E9%80%9F%E4%BC%A0%E5%A5%87V2.lua", true))()
 
 elseif game.PlaceId == 8908228901 then
         --鲨2

@@ -13,24 +13,25 @@ if game.PlaceId == 3101667897 then --极速传奇
     Text = "当前极速传奇",
     Duration = 5, 
 }) 
-local bindable = Instance.new("BindableFunction")
-bindable.OnInvoke = function(button)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/%E6%B8%B8%E6%88%8F/%E6%9E%81%E9%80%9F%E4%BC%A0%E5%A5%87V2.lua", true))()
 CoreGui:SetCore("SendNotification", {
     Title = "⚠️注意！",
     Text = "左上角！",
     Duration = 30, 
 })
-loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/%E6%B8%B8%E6%88%8F/%E6%9E%81%E9%80%9F%E4%BC%A0%E5%A5%87V2.lua", true))()
+local bindable = Instance.new("BindableFunction")
+bindable.OnInvoke = function(button) loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/7.lua"))()
 end
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
-    Title = "你想要哪个版本",
-    Text = "",
+    Title = "为什么没有以前的？",
+    Text = "你想要旧版本脚本吗",
     Icon = "rbxassetid://3926305904",
     Duration = 60,
     Callback = bindable,
-    Button1 = "最新",
-    Button2 = "我要用旧版本"
+    Button1 = "要",
+    Button2 = "不要"
 })
 
 elseif game.PlaceId == 8908228901 then

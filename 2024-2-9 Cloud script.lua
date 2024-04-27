@@ -1,6 +1,6 @@
 --[[
 😓😓😓
-源代码去拿吧😥😥
+哥我是缝合大牛啊
 ]]
 local bindable = Instance.new("BindableFunction")
 bindable.OnInvoke = function(button)

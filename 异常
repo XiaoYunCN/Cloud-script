@@ -1,0 +1,20 @@
+getgenv().getscripthash = function(script)
+return script:GetHash()
+end
+
+getgenv().dumpstring = function(p1)
+    return "\\" .. p1:gsub(".", function(c)
+        return "\\" .. string.byte(c)
+    end)
+end
+
+getgenv().getcurrentthread = function()
+   return coroutine.running()
+end
+
+getgenv().identifyexecutor = function()
+    print("Tx3Xploit")
+    return "Tx3Xploit"
+end
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/%E6%B3%A8%E5%85%A5%E5%99%A8"))()

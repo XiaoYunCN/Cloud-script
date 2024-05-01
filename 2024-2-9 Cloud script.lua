@@ -94,11 +94,11 @@ notify("小云已改昵称，其实叫云中心", Color3.fromRGB(255, 255, 255))
 end
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
-    Title = "成功执行云脚本",
-    Text = "你否是用云脚本",
+    Title = "抱歉",
+    Text = "云脚本已停产，推荐使用云中心",
     Icon = "rbxassetid://3926305904",
     Duration = 60,
     Callback = bindable,
-    Button1 = "是",
-    Button2 = "否"
+    Button1 = "我要用云脚本",
+    Button2 = "好吧"
 })

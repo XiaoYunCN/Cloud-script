@@ -90,12 +90,13 @@ function notify(name, textColor)
                 notification:Destroy()
         end)
    end
-notify("小云已改昵称，其实叫云中心", Color3.fromRGB(255, 255, 255)) loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/%E8%87%AA%E5%8A%A8%E6%94%AF%E6%8C%81%E6%9C%8D%E8%A3%85%E5%99%A8.lua", true))()
+notify("已被复制云脚本链接，其实叫云脚本中心", Color3.fromRGB(255, 255, 255))
+setclipboard("http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=ur8Jd6QyPa-jj0CRZxhUJKgtovFK1Hg4&authKey=jeoho%2FgycjAWtcLjjEf%2FFmkxgxR7QHgKg%2BXWFYZ851bgW38gYN5r8wO%2BdJQES%2FrJ&noverify=0&group_code=526684389") loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/%E8%87%AA%E5%8A%A8%E6%94%AF%E6%8C%81%E6%9C%8D%E8%A3%85%E5%99%A8.lua", true))()
 end
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
     Title = "抱歉",
-    Text = "云脚本已停产，推荐使用云中心",
+    Text = "云脚本已停更，推荐使用云脚本中心",
     Icon = "rbxassetid://3926305904",
     Duration = 60,
     Callback = bindable,

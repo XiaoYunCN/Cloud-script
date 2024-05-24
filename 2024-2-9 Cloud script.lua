@@ -90,7 +90,7 @@ function notify(name, textColor)
                 notification:Destroy()
         end)
    end
-notify("已被复制云脚本链接，其实叫云脚本中心", Color3.fromRGB(255, 255, 255))
+notify("你已被复制云脚本链接，其实叫云脚本中心", Color3.fromRGB(255, 255, 255))
 setclipboard("http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=ur8Jd6QyPa-jj0CRZxhUJKgtovFK1Hg4&authKey=jeoho%2FgycjAWtcLjjEf%2FFmkxgxR7QHgKg%2BXWFYZ851bgW38gYN5r8wO%2BdJQES%2FrJ&noverify=0&group_code=526684389") loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/%E8%87%AA%E5%8A%A8%E6%94%AF%E6%8C%81%E6%9C%8D%E8%A3%85%E5%99%A8.lua", true))()
 end
 

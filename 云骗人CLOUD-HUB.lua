@@ -16,7 +16,7 @@ wait(0.1)
 game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "给你卡死",
-    Text = "",
+    Text = "😡😡",
     Duration = 10, 
 })
 wait(1)

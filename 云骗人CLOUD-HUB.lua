@@ -1,22 +1,22 @@
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
-    Title = "哇，你又执行过了",
-    Text = "😂",
+    Title = " ",
+    Text = "",
     Duration = 5, 
 })
 
 wait(1.6)
 game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
-    Title = "已骗人😂",
-    Text = "恭喜恭喜",
+    Title = "",
+    Text = "",
     Duration = 5, 
 })
 wait(0.1)
 game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
-    Title = "给你卡死",
-    Text = "😡😡",
+    Title = "正在破解云脚本",
+    Text = " ",
     Duration = 10, 
 })
 wait(1)

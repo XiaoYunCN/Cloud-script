@@ -1,12 +1,14 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/White-ash-script/main/b.lua", true))()
 msg = Instance.new("Message")
 msg.Parent = game.Workspace
 msg.Text = "你好"
 wait(3)
 msg:remove()
 wait(1)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/White-ash-script/main/b.lua", true))()
 msg = Instance.new("Message")
 msg.Parent = game.Workspace
-msg.Text = "小云已退圈，云脚本已关闭"
+msg.Text = "小云已退圈"
 wait(5)
 msg:remove()
 wait(1)

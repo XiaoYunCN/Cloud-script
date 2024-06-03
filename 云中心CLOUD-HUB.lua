@@ -14,5 +14,5 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/IlIIIIIIIIIIIIIIIIlll
 msg = Instance.new("Message")
 msg.Parent = game.Workspace
 msg.Text = "小云可能被抓，不知道如果几个月小云回归（已废话）"
-wait(10)
+wait(14)
 msg:remove()

@@ -15,12 +15,6 @@ msg:remove()
 wait(1)
 msg = Instance.new("Message")
 msg.Parent = game.Workspace
-msg.Text = "小云已退圈"
-wait(5)
-msg:remove()
-wait(1)
-msg = Instance.new("Message")
-msg.Parent = game.Workspace
 msg.Text = "2024.7.4小云回归!!!!!（已废话）"
 wait(14)
 msg:remove()

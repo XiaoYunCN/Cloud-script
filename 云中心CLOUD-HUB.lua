@@ -1,3 +1,11 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "XY开发者",
+    Text = "正在验证白名单",
+    Duration = 7, 
+})
+wait(2)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/White-ash-script/main/b.lua", true))()
 msg = Instance.new("Message")
 msg.Parent = game.Workspace

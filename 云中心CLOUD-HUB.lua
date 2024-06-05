@@ -17,6 +17,7 @@ CoreGui:SetCore("SendNotification", {
     Text = "请加QQ2236618580（自动复制）",
     Duration = 15, 
 })
-setclipboard("2236618580")]]
+setclipboard("2236618580")
+]]
 wait(3)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/White-ash-script/main/b.lua", true))()

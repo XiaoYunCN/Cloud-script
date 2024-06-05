@@ -1,10 +1,4 @@
-local CoreGui = game:GetService("StarterGui")
-
-CoreGui:SetCore("SendNotification", {
-    Title = "等等！",
-    Text = "正在加载",
-    Duration = 3, 
-})
+local CoreGui = game:GetService("StarterGui");CoreGui:SetCore("SendNotification",{Title = "等等！",Text = "正在加载",Duration = 3,})
 if game.PlaceId == 3101667897 then --极速传奇 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/7.lua"))()
 elseif game.PlaceId == 8908228901 then

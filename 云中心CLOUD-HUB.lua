@@ -5,6 +5,11 @@ CoreGui:SetCore("SendNotification", {
     Text = "2024年7月左右更新云脚本",
     Duration = 20, 
 })
+CoreGui:SetCore("SendNotification", {
+    Title = "XY开发者",
+    Text = "云脚本加强了防破解",
+    Duration = 20, 
+})
 wait(1.9)
 CoreGui:SetCore("SendNotification", {
     Title = "你要买云脚本吗6r",

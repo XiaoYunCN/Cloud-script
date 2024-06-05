@@ -5,7 +5,8 @@ CoreGui:SetCore("SendNotification", {
     Text = "正在加载",
     Duration = 3, 
 })
-if game.PlaceId == 3101667897 then --极速传奇 loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/7.lua"))()
+if game.PlaceId == 3101667897 then --极速传奇 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/7.lua"))()
 elseif game.PlaceId == 8908228901 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/%E9%B2%A8%E5%8F%A3%E7%94%9F%E6%B1%822.lua", true))()
 elseif game.PlaceId == 155615604 then

@@ -13,7 +13,6 @@ elseif game.PlaceId == 155615604 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Xiao-Yun-UWU/main/%E7%9B%91%E6%8E%A7.lua",true))()
 elseif game.PlaceId == 10023052234 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/Evade.lua", true))() 
-})
 elseif game.PlaceId == 8888615802 then --忍者传奇
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/%E6%B8%B8%E6%88%8F/%E5%BD%A9%E8%99%B9%E6%9C%8B%E5%8F%8B.lua", true))()
 elseif game.PlaceId == 3956818381 then --忍者传奇 loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/hope%20earnestly/Ninja%20Legend.lua", true))()
@@ -31,7 +30,6 @@ elseif game.PlaceId == 1701332290 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/LLL.lua", true))()
 elseif game.PlaceId == 7239319209  then 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/%E6%B8%B8%E6%88%8F/%E4%BF%84%E4%BA%A5%E4%BF%84%E5%B7%9E.lua", true))()
-
 elseif game.PlaceId == 2413927524 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/The%20Rake.lua", true))()
 else --其他通用

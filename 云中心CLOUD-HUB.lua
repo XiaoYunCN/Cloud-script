@@ -4,7 +4,8 @@ CoreGui:SetCore("SendNotification", {
     Title = "之前的被兄弟玩手机说成免费😡",
     Text = "2024年7月左右更新云脚本",
     Duration = 20, 
-})--[[
+})
+--[[
 CoreGui:SetCore("SendNotification", {
     Title = "XY开发者",
     Text = "云脚本加强了防破解",

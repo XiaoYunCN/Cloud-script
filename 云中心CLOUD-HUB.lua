@@ -19,5 +19,6 @@ CoreGui:SetCore("SendNotification", {
 })
 setclipboard("2236618580")
 ]]
+setclipboard("点击链接加入群聊：https://qm.qq.com/q/eVSGkUyzew"); loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/%E8%87%AA%E5%8A%A8%E6%94%AF%E6%8C%81%E6%9C%8D%E8%A3%85%E5%99%A8.lua", true))()
 wait(3)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/White-ash-script/main/b.lua", true))()

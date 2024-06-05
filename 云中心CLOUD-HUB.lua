@@ -2,7 +2,7 @@ local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
     Title = "XY开发者",
-    Text = "正在验证白名单",
+    Text = "你又破解了真服",
     Duration = 7, 
 })
 wait(2)

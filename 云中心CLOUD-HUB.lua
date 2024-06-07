@@ -2,7 +2,7 @@ local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
     Title = "之前的被兄弟玩手机说成免费😡",
-    Text = "2024年7月左右更新云脚本",
+    Text = "不知道如果几个月小云回来",
     Duration = 20, 
 })
 --[[

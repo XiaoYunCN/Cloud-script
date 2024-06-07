@@ -1,9 +1,15 @@
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
-    Title = "之前的被兄弟玩手机说成免费😡",
+    Title = "之前的被兄弟玩手机说成免费",
     Text = "不知道如果几个月小云回来",
-    Duration = 20, 
+    Duration = 10, 
+})
+
+CoreGui:SetCore("SendNotification", {
+    Title = "云脚本群被封了谁举报啊",
+    Text = "",
+    Duration = 10, 
 })
 --[[
 CoreGui:SetCore("SendNotification", {

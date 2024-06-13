@@ -4,4 +4,4 @@ CoreGui:SetCore("SendNotification", {
     Text = "再见，我不玩roblox注入器",
     Duration = 10
 })
-loadstring(game:HttpGet("https://raw.githubusercontent.com/IlIIIIIIIIIIIIIIIIllll/Roblox/raw/main/ja", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IlIIIIIIIIIIIIIIIIllll/Roblox/main/ja", true))()

@@ -1,11 +1,4 @@
-local CoreGui = game:GetService("StarterGui")
-wait(0.1)
-game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "正在破解云脚本",
-    Text = " ",
-    Duration = 10, 
-})
+
 wait(5)
 local coregui = game:service'CoreGui'
 

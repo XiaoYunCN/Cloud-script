@@ -1,5 +1,5 @@
-####QQ168777105 作者小云
-####购买云脚本 6块钱
+#### QQ168777105 作者小云
+#### 购买云脚本 6块钱
 # 云脚本高级版付费
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/%E4%BA%91%E4%B8%AD%E5%BF%83CLOUD-HUB.lua", true))()

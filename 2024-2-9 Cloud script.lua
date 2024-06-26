@@ -90,16 +90,16 @@ function notify(name, textColor)
                 notification:Destroy()
         end)
    end
-notify("你已被复制云脚本链接，其实叫云脚本中心", Color3.fromRGB(255, 255, 255))
-setclipboard("点击链接加入群聊【ROBLOX云脚本群】：https://qm.qq.com/q/eVSGkUyzew"); loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/%E8%87%AA%E5%8A%A8%E6%94%AF%E6%8C%81%E6%9C%8D%E8%A3%85%E5%99%A8.lua", true))()
+notify("你已自动复制云脚本群号296846962", Color3.fromRGB(255, 255, 255))
+setclipboard("296846962"); loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/%E8%87%AA%E5%8A%A8%E6%94%AF%E6%8C%81%E6%9C%8D%E8%A3%85%E5%99%A8.lua", true))()
 end
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
-    Title = "抱歉",
-    Text = "云脚本已停更，推荐使用云脚本中心",
+    Title = "注意",
+    Text = "你想要云脚本群吗",
     Icon = "rbxassetid://3926305904",
     Duration = 60,
     Callback = bindable,
-    Button1 = "我要用云脚本",
-    Button2 = "好吧"
+    Button1 = "我要用",
+    Button2 = "我要用"
 })

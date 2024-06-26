@@ -1,12 +1,12 @@
 #### QQ168777105 作者小云
 #### 购买云脚本 6块钱
-# 云脚本高级版付费
 # 云脚本群号296846962
+# 云脚本高级版付费
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/%E4%BA%91%E4%B8%AD%E5%BF%83CLOUD-HUB.lua", true))()
 ```
 
-## 云脚本测试版免费
+## 云脚本测试版免费（支持十几个服务器）
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/2024-2-9%20Cloud%20script.lua", true))()
 ```

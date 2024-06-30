@@ -10,17 +10,13 @@ local function Notif(title, text)
     })
 end
 
-local success, result = pcall(function()
-    local l = "https://raw.githubusercontent.com/IlIIIIIIIIIIIIIIIIllll/Roblox/main/%E4%BA%91%E8%84%9A%E6%9C%AC.lua"
-    local a = game:HttpGet(l, true)
-    assert(a, "6")
-    loadstring(script)()
+local success, result = pcall(function() "https://raw.githubusercontent.com/IlIIIIIIIIIIIIIIIIllll/Roblox/main/%E4%BA%91%E8%84%9A%E6%9C%AC.lua"
 end)
 
 -- 处理加载结果
 if not success then
-    warn("加载错误: " .. tostring(result))
-    Notif("错误", "加载错误: " .. tostring(result))
+    warn("加载错误")
+    Notif("错误", "加载错误: ")
 else
     Notif("欢迎", "正常执行")
 end

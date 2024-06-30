@@ -10,7 +10,8 @@ local function Notif(title, text)
     })
 end
 
-local success, result = pcall(function() "https://raw.githubusercontent.com/IlIIIIIIIIIIIIIIIIllll/Roblox/main/%E4%BA%91%E8%84%9A%E6%9C%AC.lua"
+local success, result = pcall(function() 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IlIIIIIIIIIIIIIIIIllll/Roblox/main/%E4%BA%91%E8%84%9A%E6%9C%AC.lua", true))()
 end)
 
 -- 处理加载结果

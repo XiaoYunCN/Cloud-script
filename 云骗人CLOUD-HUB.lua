@@ -1,4 +1,4 @@
-
+print("恶搞版")
 wait(5)
 local coregui = game:service'CoreGui'
 

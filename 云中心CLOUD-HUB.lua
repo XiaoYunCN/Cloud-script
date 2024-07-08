@@ -40,6 +40,11 @@ f.MouseButton1Click:Connect(function()
 a:Destroy()
 end)
 end
+local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification",
+{Title = "云脚本",
+Text = "不支持Fluxus，脚本没有检测注入器",
+Duration = 20,})
 L()
 
 --云脚本VIP

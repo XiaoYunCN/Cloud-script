@@ -23,7 +23,7 @@ d.Text = "加载旧版本 V1.3.0"
 d.Size = UDim2.new(0.8, 0, 0.15, 0)
 d.Position = UDim2.new(0.1, 0, 0.3, 0)
 d.Parent = b
-e.Text = "查看云脚本群里"
+e.Text = "云脚本测试版"
 e.Size = UDim2.new(0.8, 0, 0.15, 0)
 e.Position = UDim2.new(0.1, 0, 0.5, 0)
 e.Parent = b
@@ -35,7 +35,7 @@ d.MouseButton1Click:Connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/6666666666666666666666666.lua", true))()
 end)
 e.MouseButton1Click:Connect(function()
-game.Players.LocalPlayer:Kick("正常通过群号搜索云脚本①群296846962云脚本❷群902651898")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/refs/heads/main/Cloud%20Hub%20%5BBETA%5D", true))()
 end)
 f.MouseButton1Click:Connect(
 function()

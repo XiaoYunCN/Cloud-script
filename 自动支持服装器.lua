@@ -1,5 +1,30 @@
 
---小云自己做GUI，你喜欢偷GUI是吧？🤣🤣
+local Players = game:GetService("Players")
+local TweenService = game:GetService("TweenService")
+local lc = Players.LocalPlayer
+local group = 35063130
+local grouplink = "云脚本"
+local animating = false 
+
+local function createRainbowEffect(label)
+    local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, -1, true)
+    local tweenColorSequence = {
+        Color3.fromRGB(255, 0, 0),
+        Color3.fromRGB(255, 127, 0),
+        Color3.fromRGB(0, 127, 255),
+        Color3.fromRGB(255, 0, 127),
+        Color3.fromRGB(0, 255, 0),
+        Color3.fromRGB(127, 0, 255),
+        Color3.fromRGB(255, 0, 0)
+    }
+
+    for _, color in ipairs(tweenColorSequence) do
+        local tween = TweenService:Create(label, tweenInfo, {TextColor3 = color})
+        tween:Play()
+    end
+end
+
+if lc:IsInGroup(group) then
 function L()
 local a = Instance.new("ScreenGui")
 local b = Instance.new("Frame")
@@ -73,4 +98,132 @@ elseif game.PlaceId == 2413927524 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/The%20Rake.lua", true))()
 else
 L()
+end
+
+    print("已加入群组")
+else
+    setclipboard(grouplink)
+    local screenGui = Instance.new("ScreenGui", lc:WaitForChild("PlayerGui"))
+    screenGui.IgnoreGuiInset = true
+
+    local fullScreenFrame = Instance.new("Frame", screenGui)
+    fullScreenFrame.Size = UDim2.new(1, 0, 1, 0)
+    fullScreenFrame.Position = UDim2.new(0, 0, 0, 0)
+    fullScreenFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+    fullScreenFrame.BorderSizePixel = 0
+
+    local titleLabel = Instance.new("TextLabel", fullScreenFrame)
+    titleLabel.Size = UDim2.new(1, 0, 0, 60)
+    titleLabel.Position = UDim2.new(0, 0, 0, 0)
+    titleLabel.Text = "云脚本提示"
+    titleLabel.TextColor3 = Color3.new(1, 1, 1)
+    titleLabel.TextScaled = true
+    titleLabel.BackgroundTransparency = 1
+    titleLabel.Font = Enum.Font.GothamBold
+    createRainbowEffect(titleLabel) 
+
+    local textLabel1 = Instance.new("TextLabel", fullScreenFrame)
+    textLabel1.Size = UDim2.new(1, 0, 0, 80)
+    textLabel1.Position = UDim2.new(0, 0, 0.135, 0)
+    textLabel1.Text = "请搜索并加入‘云脚本’群组以使用云脚本，谢谢您"
+    textLabel1.TextColor3 = Color3.new(1, 1, 1) 
+    textLabel1.TextScaled = true
+    textLabel1.BackgroundTransparency = 1
+    textLabel1.Font = Enum.Font.Gotham
+
+    local unknownButton = Instance.new("TextButton", fullScreenFrame)
+    unknownButton.Size = UDim2.new(0, 200, 0, 50)
+    unknownButton.Position = UDim2.new(0.5, -100, 0.4, 0)
+    unknownButton.Text = "在哪找到群组"
+    unknownButton.TextScaled = true
+    unknownButton.TextColor3 = Color3.new(1, 1, 1) 
+    unknownButton.BackgroundColor3 = Color3.fromRGB(0, 120, 215)
+    unknownButton.BorderSizePixel = 0
+    unknownButton.Font = Enum.Font.GothamMedium
+
+    local exitButton = Instance.new("TextButton", fullScreenFrame)
+    exitButton.Size = UDim2.new(0, 150, 0, 50)
+    exitButton.Position = UDim2.new(1, -160, 1, -60)
+    exitButton.Text = "拒绝，我要使用云脚本"
+    exitButton.TextColor3 = Color3.new(1, 1, 1)
+    exitButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+    exitButton.BorderSizePixel = 0
+    exitButton.Font = Enum.Font.GothamMedium
+    exitButton.TextScaled = true
+    exitButton.MouseButton1Click:Connect(function()
+        screenGui.Enabled = false 
+    end)
+
+    local function createFadeInAnimation(frame)
+        if not animating then 
+            animating = true
+            frame.Position = UDim2.new(0.5, -frame.Size.X.Offset / 2, 0.5, -frame.Size.Y.Offset / 2)
+            frame.Size = UDim2.new(0, 0, 0, 0)
+            frame:TweenSize(UDim2.new(1, 0, 1, 0), "Out", "Quad", 1.5, true)
+            frame:TweenPosition(UDim2.new(0, 0, 0, 0), "Out", "Quad", 1.5, true)
+            wait(0.5) 
+            animating = false
+        end
+    end
+
+    local function createScaleAnimation(button)
+        button.MouseEnter:Connect(function()
+            if not animating then 
+                button:TweenSize(UDim2.new(0.1, 0, 0.1, 0), "Out", "Quad", 0.2, true)
+            end
+        end)
+
+        button.MouseLeave:Connect(function()
+            if not animating then 
+                button:TweenSize(UDim2.new(0.15, 0, 0.15, 0), "Out", "Quad", 0.2, true)
+            end
+        end)
+    end
+
+    createFadeInAnimation(fullScreenFrame)
+    createScaleAnimation(unknownButton)
+    createScaleAnimation(exitButton)
+
+    unknownButton.MouseButton1Click:Connect(function()
+        if not animating then 
+            animating = true
+            local infoFrame = Instance.new("Frame", fullScreenFrame)
+            infoFrame.Size = UDim2.new(0.8, 0, 0.4, 0)
+            infoFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+            infoFrame.AnchorPoint = Vector2.new(0.5, 0.5) 
+            infoFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+            infoFrame.BorderSizePixel = 0
+
+            local infoLabel = Instance.new("TextLabel", infoFrame)
+            infoLabel.Size = UDim2.new(1, 0, 0.8, 0)
+            infoLabel.Text = "你可以在ROBLOX设置的搜索框中找到群组，输入'云脚本'进行搜索。"
+            infoLabel.TextColor3 = Color3.new(1, 1, 1) 
+            infoLabel.TextScaled = true
+            infoLabel.BackgroundTransparency = 1
+            infoLabel.Font = Enum.Font.Gotham
+
+            local closeButtonInInfo = Instance.new("TextButton", infoFrame)
+            closeButtonInInfo.Size = UDim2.new(0, 100, 0, 40)
+            closeButtonInInfo.Position = UDim2.new(0.5, -50, 0.9, 0)
+            closeButtonInInfo.Text = "关闭"
+            closeButtonInInfo.TextColor3 = Color3.new(1, 1, 1) 
+            closeButtonInInfo.BackgroundColor3 = Color3.fromRGB(0, 120, 215)
+            closeButtonInInfo.BorderSizePixel = 0
+            closeButtonInInfo.Font = Enum.Font.GothamMedium
+            closeButtonInInfo.TextScaled = true
+
+            closeButtonInInfo.MouseButton1Click:Connect(function()
+                infoFrame:Destroy()
+                animating = false 
+            end)
+
+            createFadeInAnimation(infoFrame)
+        end
+    end)
+
+    unknownButton.MouseButton1Down:Connect(function()
+        if not animating then  
+            unknownButton:TweenSize(UDim2.new(1, 0, 1, 0), "Out", "Quad", 0.2, true)
+        end
+    end)
 end

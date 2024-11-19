@@ -1,1 +1,1 @@
-game:GetService("Players").LocalPlayer:Kick("云脚本QQ群号296846962")
+game:GetService("Players").LocalPlayer:Kick("云脚本QQ群号296846962，群文件获取云脚本")

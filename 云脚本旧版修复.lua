@@ -28,5 +28,5 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-scrip
 elseif game.PlaceId == 2413927524 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/The%20Rake.lua", true))()
 else
-
+loadstring(game:HttpGet("https://github.com/CloudX-ScriptsWane/ScriptsDache/raw/main/%E5%85%B6%E4%BB%96%E9%80%9A%E7%94%A8.lua", true))()
 end
